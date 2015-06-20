@@ -5,8 +5,4 @@
         android:id="@+id/copy"
         android:title="@string/menu_copy"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/share"
-        android:title="@string/menu_share"
-        app:showAsAction="ifRoom" />
 </menu>

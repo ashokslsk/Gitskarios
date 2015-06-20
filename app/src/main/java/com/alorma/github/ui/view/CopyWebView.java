@@ -95,7 +95,6 @@ public class CopyWebView extends WebView {
             inflater.inflate(R.menu.menu_web_view_copy, menu);
 
             menu.findItem(R.id.copy).setIcon(new IconicsDrawable(CopyWebView.this.getContext(), GoogleMaterial.Icon.gmd_content_copy).color(Color.WHITE).actionBar());
-            menu.findItem(R.id.share).setIcon(new IconicsDrawable(CopyWebView.this.getContext(), GoogleMaterial.Icon.gmd_share).color(Color.WHITE).actionBar());
 
             return true;
         }
@@ -111,9 +110,6 @@ public class CopyWebView extends WebView {
             switch (item.getItemId()) {
                 case R.id.copy:
                     getSelectedData();
-                    mode.finish();
-                    return true;
-                case R.id.share:
                     mode.finish();
                     return true;
                 default:
